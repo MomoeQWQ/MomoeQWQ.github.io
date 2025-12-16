@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>在vscode中调试C#遇到的问题</title>
+    <link href="/2025/12/16/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <url>/2025/12/16/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="C-在vscode中调试遇到的问题"><a href="#C-在vscode中调试遇到的问题" class="headerlink" title="C#在vscode中调试遇到的问题"></a>C#在vscode中调试遇到的问题</h2><h3 id="1-vscode-C-插件兼容性"><a href="#1-vscode-C-插件兼容性" class="headerlink" title="1.vscode C#插件兼容性"></a>1.vscode C#插件兼容性</h3><p>首先，装插件什么的就不说了，自己问AI就行，装好C# Dev Kit。</p><p>如果要求不高的话，可以直接命令行编译，但是想要调试，于是乎花了一下午在vscode里弄好，成果大概是这样：</p><p><img src="/img/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/1765875333767.png" alt="1765875333767" title="调试成品效果"></p><p>用的版本是最新的.NET10。</p><p><strong>划重点：一定要更新最新的vscode版本，别自己写json。</strong></p><p>C#调试和工作流微软貌似在近一年进行了很大的调整，因此对于版本的要求比较苛刻。</p><p>我一开始遇到的问题就是调试json无法自动生成，因为无法识别项目，最后发现其原因在于C#插件版本过旧，无法识别dotnet生成的项目。</p><h3 id="2-C-资源管理"><a href="#2-C-资源管理" class="headerlink" title="2.C#资源管理"></a>2.C#资源管理</h3><p><img src="/img/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/1765875315828.png" alt="1765875315828" title="目录结构"></p><p>（一开始不知道C#是面向项目运行的，还在傻傻的run .cs文件）</p><p>目前的做法是在一个项目中，program调用其他文件写的公开类，之后可能还会优化。</p><p>对于C#的初步感性认知：OOP、比C&#x2F;CPP更高级、十分的“工程化”。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>C#</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于这个主页要做些什么的想法1.0</title>
     <link href="/2025/12/15/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E4%B8%BB%E9%A1%B5%E8%A6%81%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%E7%9A%84%E6%83%B3%E6%B3%951-0/"/>
     <url>/2025/12/15/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E4%B8%BB%E9%A1%B5%E8%A6%81%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%E7%9A%84%E6%83%B3%E6%B3%951-0/</url>
