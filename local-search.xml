@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>关于latex和文献格式两三事</title>
+    <link href="/2025/12/17/%E5%85%B3%E4%BA%8ELatex%E5%92%8C%E6%96%87%E7%8C%AE%E6%A0%BC%E5%BC%8F/"/>
+    <url>/2025/12/17/%E5%85%B3%E4%BA%8ELatex%E5%92%8C%E6%96%87%E7%8C%AE%E6%A0%BC%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<h2 id="别当公式酱了♂"><a href="#别当公式酱了♂" class="headerlink" title="别当公式酱了♂"></a>别当公式酱了♂</h2><p>没有写过很正式的论文，因此也没系统学习过Latex。今天在AI帮助下学习了下大概的流程，只能说上手还是有一些门槛。</p><p>文献翻译的作业还是传统的Word插个两列表手输得了。</p><p>事实证明，仅仅是让AI对着一个二十万字左右的论文点对点翻译，AI在格式上也无法做好，这和让AI写长篇小说到最后就变成流水账应该原理类似。</p><p>即便Latex应该是AI“理所当然”要擅长的领域。</p><p>emm，任重道远吧。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Latex</tag>
+      
+      <tag>academic</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>在vscode中调试C#遇到的问题</title>
     <link href="/2025/12/16/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <url>/2025/12/16/%E5%9C%A8vscode%E4%B8%AD%E8%B0%83%E8%AF%95C-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
