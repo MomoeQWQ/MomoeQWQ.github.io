@@ -21,8 +21,8 @@
   
     <meta name="description" content="本文将主要从战斗策划的视角做英雄技能组设计的拆解。因为笔者本科技术出身，也已经对UE5和Unity有一定了解，所以辅以技术&#x2F;数值的一些理解。 1.为什么选择这个题目1.1为什么选择OW？守望先锋（Overwatch，也简称OW）是一款由暴雪研发，非常著名的在线竞技游戏。它是唯一获得TGA奖项的在线多人竞技游戏，其游戏设计、代码和优化都是对后来者极具启发性的，“FPS+MOBA”的玩法独树">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《守望先锋“猎空”（Tracer）技能技能组设计与底层逻辑拆解》">
-<meta property="og:url" content="https://momoeqwq.github.io/2026/03/18/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/index.html">
+<meta property="og:title" content="OW tracer Dismantling Case">
+<meta property="og:url" content="https://momoeqwq.github.io/2026/03/18/OW_tracer_Dismantling_Case/index.html">
 <meta property="og:site_name" content="MomoeQWQ&#39;s Blog">
 <meta property="og:description" content="本文将主要从战斗策划的视角做英雄技能组设计的拆解。因为笔者本科技术出身，也已经对UE5和Unity有一定了解，所以辅以技术&#x2F;数值的一些理解。 1.为什么选择这个题目1.1为什么选择OW？守望先锋（Overwatch，也简称OW）是一款由暴雪研发，非常著名的在线竞技游戏。它是唯一获得TGA奖项的在线多人竞技游戏，其游戏设计、代码和优化都是对后来者极具启发性的，“FPS+MOBA”的玩法独树">
 <meta property="og:locale" content="zh_CN">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://momoeqwq.github.io/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366509171.gif">
 <meta property="og:image" content="https://momoeqwq.github.io/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366706269.gif">
 <meta property="article:published_time" content="2026-03-18T15:29:17.000Z">
-<meta property="article:modified_time" content="2026-03-24T15:52:08.216Z">
+<meta property="article:modified_time" content="2026-03-24T16:05:02.506Z">
 <meta property="article:author" content="Momoe">
 <meta property="article:tag" content="拆解案">
 <meta name="twitter:card" content="summary_large_image">
@@ -48,7 +48,7 @@
   
   
   
-  <title>《守望先锋“猎空”（Tracer）技能技能组设计与底层逻辑拆解》 - MomoeQWQ&#39;s Blog</title>
+  <title>OW tracer Dismantling Case - MomoeQWQ&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -361,8 +361,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>《守望先锋“猎空”（Tracer）技能技能组设计与底层逻辑拆解》</div>
-      <div>https://momoeqwq.github.io/2026/03/18/守望先锋“猎空”（Tracer）技能技能组设计与底层逻辑拆解/</div>
+      <div>OW tracer Dismantling Case</div>
+      <div>https://momoeqwq.github.io/2026/03/18/OW_tracer_Dismantling_Case/</div>
     </div>
     <div class="license-meta">
       
