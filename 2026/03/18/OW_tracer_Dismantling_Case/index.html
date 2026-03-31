@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://momoeqwq.github.io/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366509171.gif">
 <meta property="og:image" content="https://momoeqwq.github.io/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366706269.gif">
 <meta property="article:published_time" content="2026-03-18T15:29:17.000Z">
-<meta property="article:modified_time" content="2026-03-24T16:05:02.506Z">
+<meta property="article:modified_time" content="2026-03-27T07:06:30.420Z">
 <meta property="article:author" content="Momoe">
 <meta property="article:tag" content="拆解案">
 <meta name="twitter:card" content="summary_large_image">
@@ -326,7 +326,7 @@
 <h3 id="2-4-特别快递"><a href="#2-4-特别快递" class="headerlink" title="2.4 特别快递"></a>2.4 特别快递</h3><p><img src="/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774364721202.gif" srcset="/img/loading.gif" lazyload alt="脉冲炸弹"><br>猎空的终极技能并不强力，但仍然很好联动了技能组。扔出一枚呈抛物线的小炸弹，附着在任何物体或敌人身上，短暂延迟后爆炸，造成巨额范围伤害。</p>
 <p>设计意图在于，极短的施法前摇，极小的爆炸范围。鼓励玩家与闪现和闪回打出终极 Combo，完成“万军丛中取敌将首级，事了拂衣去”的刺客体验。</p>
 <p>这是一个抛物线投射物（Projectile）。吸附逻辑：在触发 OnComponentHit 时，关闭炸弹的物理模拟，并调用 AttachToComponent，将其 Socket 到被击中敌人的骨骼（Bone）上。2 秒延迟后触发 ApplyRadialDamage（径向伤害）。</p>
-<h2 id="3-我们能从中学到什么"><a href="#3-我们能从中学到什么" class="headerlink" title="3.我们能从中学到什么"></a>3.我们能从中学到什么</h2><h3 id="3-1-技能协同与资源循环"><a href="#3-1-技能协同与资源循环" class="headerlink" title="3.1 技能协同与资源循环"></a>3.1 技能协同与资源循环</h3><p>猎空的设计之所以优秀，在于她的技能毫不鼓励，而是构成了一个极其严密的资源管理闭环。</p>
+<h2 id="3-我们能从中学到什么"><a href="#3-我们能从中学到什么" class="headerlink" title="3.我们能从中学到什么"></a>3.我们能从中学到什么</h2><h3 id="3-1-技能协同与资源循环"><a href="#3-1-技能协同与资源循环" class="headerlink" title="3.1 技能协同与资源循环"></a>3.1 技能协同与资源循环</h3><p>猎空的设计之所以优秀，在于她的技能毫不孤立，而是构成了一个极其严密的资源管理闭环。</p>
 <p>刺杀标准公式：<br>寻找掩体 -&gt; 交1段闪现逼近 -&gt; 打空一梭子子弹 -&gt; 近战攻击（V键）取消换弹后摇 -&gt; 贴上脉冲炸弹 (Q) -&gt; 交闪回 (E) 撤退并回复血量。<br><img src="/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366509171.gif" srcset="/img/loading.gif" lazyload alt="Combo演示"></p>
 <p>博弈空间 (Counterplay)：<br>猎空的博弈本质是“CD的计算”。敌方在等猎空交出 闪回，一旦 E 进入长达 12 秒的冷却，拥有 175HP 的猎空就会变成待宰的羔羊。此时猎空必须极度保守地使用 闪现 来保命。这种资源枯竭前后的打法切换，赋予了英雄极高的操作上限和观赏性。</p>
 <h3 id="3-2-打击感与视听反馈调教"><a href="#3-2-打击感与视听反馈调教" class="headerlink" title="3.2 打击感与视听反馈调教"></a>3.2 打击感与视听反馈调教</h3><p>除了机制，OW 对猎空的操作反馈调教堪称业界教科书：<br>闪现的FOV牵扯：每次使用闪现，摄像机的 FOV（视野范围）会瞬间拉大再回弹，配合屏幕边缘的蓝色动感模糊，通过视觉欺骗极大地增强了“速度感”。<br><img src="/img/%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B%E2%80%9C%E7%8C%8E%E7%A9%BA%E2%80%9D%EF%BC%88Tracer%EF%BC%89%E6%8A%80%E8%83%BD%E6%8A%80%E8%83%BD%E7%BB%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/1774366706269.gif" srcset="/img/loading.gif" lazyload alt="闪现0.3倍速慢放"><br>音频空间感：闪现特有的“咻”声具有极强的 3D 空间衰减。优秀的对手可以通过听声辩位，精确判断猎空闪现到了自己背后的哪个方向。<br>命中正反馈：极高射速带来的连续 Hitmarker（准星变红）与命中音效“滴滴滴”的叠加，给予了玩家极强的倾泻火力的爽快感。</p>
