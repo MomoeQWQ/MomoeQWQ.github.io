@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Momoe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="0.review的出发点和伊始古贤云：“学而不思则罔，思而不学则殆。” 昨天晚上像往常一样刷着B站，然后看到了这样一个视频：[个人经验分享,如何成为大厂校招策划]https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17H4y1w7Ug看完后大受裨益，此前我一直觉得，游戏设计，或者说策划很难有一个“知识”体系建立的大纲。因此，其实一开始摸索这个领域的知识时，我还是非常迷茫的：看着别人成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="游戏设计工具箱review_当死亡不仅仅是死亡">
+<meta property="og:url" content="https://momoeqwq.github.io/2026/03/27/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7%E7%AE%B1review-%E5%BD%93%E6%AD%BB%E4%BA%A1%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E6%AD%BB%E4%BA%A1/index.html">
+<meta property="og:site_name" content="MomoeQWQ&#39;s Blog">
+<meta property="og:description" content="0.review的出发点和伊始古贤云：“学而不思则罔，思而不学则殆。” 昨天晚上像往常一样刷着B站，然后看到了这样一个视频：[个人经验分享,如何成为大厂校招策划]https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17H4y1w7Ug看完后大受裨益，此前我一直觉得，游戏设计，或者说策划很难有一个“知识”体系建立的大纲。因此，其实一开始摸索这个领域的知识时，我还是非常迷茫的：看着别人成">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-03-27T13:36:46.000Z">
+<meta property="article:modified_time" content="2026-11-13T13:16:09.182Z">
+<meta property="article:author" content="Momoe">
+<meta property="article:tag" content="Review，游戏设计">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>游戏设计工具箱review_当死亡不仅仅是死亡 - MomoeQWQ&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"momoeqwq.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="游戏设计工具箱review_当死亡不仅仅是死亡"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-03-27 13:36" pubdate>
+          2026年3月27日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          20 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">游戏设计工具箱review_当死亡不仅仅是死亡</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="0-review的出发点和伊始"><a href="#0-review的出发点和伊始" class="headerlink" title="0.review的出发点和伊始"></a>0.review的出发点和伊始</h2><p>古贤云：“学而不思则罔，思而不学则殆。”</p>
+<p>昨天晚上像往常一样刷着B站，然后看到了这样一个视频：<br>[个人经验分享,如何成为大厂校招策划]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17H4y1w7Ug">https://www.bilibili.com/video/BV17H4y1w7Ug</a><br>看完后大受裨益，此前我一直觉得，游戏设计，或者说策划很难有一个“知识”体系建立的大纲。因此，其实一开始摸索这个领域的知识时，我还是非常迷茫的：看着别人成熟的demo中炫酷的特效，手感良好的3C，便觉得这一切是那么的遥不可及。但自己上手UE5后，才发现UE的蓝图系统和资产管理，以及资产的获取难度并不高，甚至两三天就可以快速上手，即便我的蓝图连的和高中电路一样，必然会被老师骂个狗血淋头。</p>
+<p>这个视频非常好的指出了一些资源，我认为做资源和信息整合发布到互联网上的人，是真正还在发扬互联网精神的一批人，对他们表示感谢和敬意。这个时代不缺信息来源，但缺少优质信息的整合。</p>
+<p>回到最开始那句话，在我借助AI的帮助下跑起来一个demo的过程中，经历了如下几个阶段：1.什么都不会，摸索，照着做 2.初步建立了实现某个特定功能的逻辑链条 3.觉得现有项目的目录管理直接没法看，推倒重来 4.在基础上重新开始，这一次，条理清晰，一天时间就把之前好些天摸索的东西全部依据现有理解做出来，并且对UE5整体的工作逻辑（暴露给非程序员的接口）弄明白了些。 5.做增量，完成了之前因管理紊乱而难以改进的逻辑</p>
+<p>这个过程中，借助AI的帮助，我虽然完成了demo，但看完上述那个视频，我意识到自己正处于“学而不思则罔”的状态，尤其是其中一句话：“面试官问你，你连MDA是什么都答不上来”，一下被cue中了。然后我就顺手补充了下知识：</p>
+<p>MDA 框架（英文：MDA framework；中文：机制动态美学框架）是游戏设计上常用的一个理论框架。根据 MDA 框架，一个游戏－无论是棋盘游戏、纸牌游戏、电子游戏－皆由三个部分组成：</p>
+<p>机制（Mechanics）<br>动态（Dynamics）<br>美学（Aesthetics）</p>
+<p>在看维基的过程中，我猛然意识到，乔布斯曾经说自己大学蹭课听的字体设计，在将来的MacOS上发挥了大用处。而我本科期间曾经学的那些“无用之用”：博弈论与信息经济学，消费行为学，消费心理，甚至二外日语等等，都在我准备搭建自己的“游戏设计&#x2F;策划”知识库中开始产生潜移默化的影响，并最终会形成我自己独特的理解。在建立一个理论知识的框架中，我自己也是有一定优势的，所以，我决定开始动手。</p>
+<p>当然，千里之行，始于足下。既然下定决心好好记录自己学习的路径，那么，我就定下了一个目标。</p>
+<p>根据视频中的推荐，我会先挑自己熟悉的几个作品为引子的视频，然后开始更新自己对《游戏设计工具箱》的review。</p>
+<h2 id="1-死亡，失败和惩罚"><a href="#1-死亡，失败和惩罚" class="headerlink" title="1.死亡，失败和惩罚"></a>1.死亡，失败和惩罚</h2><p>视频源地址：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Rf4y157ne">https://www.bilibili.com/video/BV1Rf4y157ne</a></p>
+<p>建议看完视频后可以看下搬运者的笔记。</p>
+<p>在我制作自己的demo时，我对于死亡的处理无外乎禁止输入操作，播放死亡动画，然后，重新开始这个关卡。但事实上，游戏设计中的死亡有很多含义，死亡在多数情况下往往意味着失败，以及玩家将受到设计者相应的惩罚。</p>
+<p>先来讲讲我比较熟悉的魂系列，这个视频是2015年，血源诅咒刚刚上线时发布的。后来的黑暗之魂3，只狼和艾尔登法环，其实在死亡惩罚这个方面并没有比血源有太多创新。纵观整个魂系列，三部曲和法环的死亡惩罚其实非常一致，视频中也提到，就是失去你所有的魂，并且会刷新你费力击杀的一切沿途小怪，这对于一个不追求游戏难度的玩家来说，是一个挫败感非常强的机制，这也是为什么玩家对魂系列几乎只有浅尝辄止便放弃，和打完一部意犹未尽，想要尝试全系列作品两类态度的一大原因。血源对死亡的处理也只是做了一个简单创新，就是魂有可能会被放在你死亡地点附近的小怪上，再次击杀它后才能取回魂，而不是回到原地就可以，这个机制后来也没有被沿用，因为本质上换汤不换药。</p>
+<p>综上所述，魂系列是一个将死亡、惩罚与失败牢牢联系住的系列，这要求玩家不断提升自己的技术，在一次次由死亡导致的失败和惩罚，也就是“受苦”中成长。</p>
+<p>但死亡可以与这二者脱钩，视频中也提到了，死亡，可以本身就是游戏的一种机制。</p>
+<p>只狼对于死亡的处理反而是值得称道的。shadow dies twice，这个机制贯穿了游戏的名称、剧情、流程和战斗，是一个非常高明的设计，尤其是当你从人造神子手中获得不死斩时，那一段演出可以说引爆了玩家一次次死亡，一次次依靠龙胤复活累计的对“影逝二度”的感性认知。视频中也提到，把死亡作为游戏机制，也许是一种不错的做法。</p>
+<p>在小说中，有“线索”这个概念。线索贯穿全文，吸引读者的阅读兴趣，同时设置悬念，让读者有自发读下去的动力。在另一篇游戏设计工具箱中，作者也会提到，持续保持玩家的注意力和兴趣在继续游戏流程上，在这个时代是非常重要的，而推理小说&#x2F;悬疑小说能轻松地消耗你的整堂高中物理课，使你全身心沉浸在故事中，依靠的就是“线索”设置的悬念。</p>
+<p>而线索有一个重要的特点，那就是贯穿全文，多次出现。那么，在一个难度不低，且有死亡设计的游戏中，贯穿游戏出现最多的元素，不就是“死亡”吗？</p>
+<h2 id="2-天外来物：线索的选择"><a href="#2-天外来物：线索的选择" class="headerlink" title="2. 天外来物：线索的选择"></a>2. 天外来物：线索的选择</h2><p>这里我的思维或许有些发散，脱离了原本死亡相关的议题，但我觉得仍然是值得记录和说道的。</p>
+<p>我认为，最好的，利用死亡，或者说与死亡类似的，一个游戏中“固有的”“玩家所熟知的”机制的方式，就是让它变成线索，变成引子，变成一枚在玩家意想不到的时刻引爆的定时炸弹。这样的创新带来的体验，能给玩家莫大的新鲜感。</p>
+<p>具体来说，要把一个玩家所熟知的，甚至依赖的机制在某一刻做出改变，或者，将它作为一个游戏叙述内容的线索。</p>
+<p>比方说，如果我要用《魔法禁书目录》的世界观制作一个游戏，那么，“幻想杀手”这个金手指就是这条线索。在前期，它的能力只是消解魔法，但随着世界观展开，当麻的能力被证明是魔法与科学的交点时，这个贯穿主人公成长历程的线索，或者说能力，将被引爆。这种做法和只狼的龙胤类似。</p>
+<p>再比方说，参考《Re0》或类似的重生流小说与游戏死亡交叠的异曲同工之妙，玩家通过死亡经历，获得一种“信息差”，以便玩家在下次面对相同的挑战时，能够做出更好的应对，给玩家一种“游戏角色没变，是我变强”的满足感。</p>
+<p>你是不是有一种即视感，这不就是魂系列死亡的魅力所在吗？</p>
+<p>所以，如果给我设计，我一定会选择玩家足够熟悉的，且可以保持耐心的流程中，出现最多的元素作为游戏的“线索”。而把死亡作为线索，是我认为在游戏死亡推陈出新，做出创意的方法中，既具有成功案例，可行性和普适度也足够高的一种做法。</p>
+<p>甚至，有一天也许我们能制作一款，剧情和《命运石之门》一样的游戏，将阻止死亡作为游戏目标，将失败作为玩家成长的要素，将惩罚变成一种非此即彼的选择题，将寻找TE作为游戏的结局。我们上文所提及的“死亡，失败，惩罚”三者，也许有一天能在游戏中以一种，只有文学中曾经出现过的形态与我们相见，我相信，这一定是非常惊艳的。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Review%EF%BC%8C%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" class="print-no-link">#Review，游戏设计</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>游戏设计工具箱review_当死亡不仅仅是死亡</div>
+      <div>https://momoeqwq.github.io/2026/03/27/游戏设计工具箱review-当死亡不仅仅是死亡/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Momoe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2026年3月27日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2026/03/31/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7%E7%AE%B1review-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F%E4%BB%8E%E4%BD%95%E8%80%8C%E6%9D%A5/" title="游戏设计工具箱review-优秀的战斗系统从何而来">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">游戏设计工具箱review-优秀的战斗系统从何而来</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/03/27/UE5demover1-0/" title="UE5demo_ver1.0">
+                        <span class="hidden-mobile">UE5demo_ver1.0</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>Theme:</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
